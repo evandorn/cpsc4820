@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="49e-Tb-3d3">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--Timer-->
+        <scene sceneID="hNz-n2-bh7">
+            <objects>
+                <viewController title="Timer" id="9pv-A4-QxB" customClass="FirstViewController" customModule="Pomodoro" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Ia1-K6-d13"/>
+                        <viewControllerLayoutGuide type="bottom" id="4ug-Mw-9AY"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="tsR-hK-woN">
+                        <rect key="frame" x="0.0" y="64" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HC9-4E-1qq">
+                                <rect key="frame" x="127" y="532" width="49" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="49" id="ghe-D9-Gc6"/>
+                                </constraints>
+                                <state key="normal" title="Start">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="start:" destination="9pv-A4-QxB" eventType="touchUpInside" id="MTT-uv-aco"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Work Time:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kSr-52-Sy2">
+                                <rect key="frame" x="30" y="414" width="87" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Break Time:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8FU-WF-wfJ">
+                                <rect key="frame" x="27" y="482" width="92" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xbA-r0-lwQ">
+                                <rect key="frame" x="323" y="532" width="33" height="30"/>
+                                <state key="normal" title="Stop">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="stop:" destination="9pv-A4-QxB" eventType="touchUpInside" id="Z4F-My-1c5"/>
+                                </connections>
+                            </button>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="D9k-Ug-oPg">
+                                <rect key="frame" x="141" y="479" width="215" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <action selector="newBreakTimerValue:" destination="9pv-A4-QxB" eventType="valueChanged" id="RsS-2h-006"/>
+                                    <outlet property="delegate" destination="9pv-A4-QxB" id="baU-HP-xvk"/>
+                                </connections>
+                            </textField>
+                            <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="SNx-gJ-hz9">
+                                <rect key="frame" x="0.0" y="14" width="375" height="44"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="barTintColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <items>
+                                    <navigationItem title="Pomodoro" id="pZ8-On-qhN"/>
+                                </items>
+                            </navigationBar>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="25:00" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="foD-MH-gSK">
+                                <rect key="frame" x="104" y="229" width="203" height="91"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="203" id="QXF-EM-DzX"/>
+                                    <constraint firstAttribute="height" constant="91" id="hnZ-de-bFS"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="75"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ih1-AT-5LQ">
+                                <rect key="frame" x="141" y="411" width="215" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="215" id="iW6-gd-10z"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <action selector="newWorkTimerValue:" destination="9pv-A4-QxB" eventType="valueChanged" id="sCD-ly-3FM"/>
+                                    <outlet property="delegate" destination="9pv-A4-QxB" id="rV4-nH-6mW"/>
+                                </connections>
+                            </textField>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="foD-MH-gSK" firstAttribute="leading" secondItem="tsR-hK-woN" secondAttribute="leading" constant="104" id="1vw-uN-w70"/>
+                            <constraint firstItem="kSr-52-Sy2" firstAttribute="baseline" secondItem="ih1-AT-5LQ" secondAttribute="baseline" id="4IY-dk-lxP"/>
+                            <constraint firstItem="ih1-AT-5LQ" firstAttribute="top" secondItem="foD-MH-gSK" secondAttribute="bottom" constant="91" id="BWg-xt-E3S"/>
+                            <constraint firstItem="HC9-4E-1qq" firstAttribute="top" secondItem="D9k-Ug-oPg" secondAttribute="bottom" constant="23" id="JOI-BR-YNy"/>
+                            <constraint firstAttribute="trailing" secondItem="SNx-gJ-hz9" secondAttribute="trailing" id="RiA-RG-KUC"/>
+                            <constraint firstItem="SNx-gJ-hz9" firstAttribute="top" secondItem="tsR-hK-woN" secondAttribute="top" constant="14" id="VNl-r6-Jd9"/>
+                            <constraint firstItem="xbA-r0-lwQ" firstAttribute="trailing" secondItem="D9k-Ug-oPg" secondAttribute="trailing" id="Ve8-71-QDP"/>
+                            <constraint firstItem="HC9-4E-1qq" firstAttribute="leading" secondItem="foD-MH-gSK" secondAttribute="leading" constant="23" id="Vfh-ij-C1L"/>
+                            <constraint firstItem="D9k-Ug-oPg" firstAttribute="leading" secondItem="8FU-WF-wfJ" secondAttribute="trailing" constant="22" id="Vtv-wa-QQ3"/>
+                            <constraint firstItem="D9k-Ug-oPg" firstAttribute="baseline" secondItem="8FU-WF-wfJ" secondAttribute="baseline" id="Wlj-Fd-ZaE"/>
+                            <constraint firstItem="4ug-Mw-9AY" firstAttribute="top" secondItem="HC9-4E-1qq" secondAttribute="bottom" constant="56" id="Yv6-m9-kuZ"/>
+                            <constraint firstItem="D9k-Ug-oPg" firstAttribute="top" secondItem="ih1-AT-5LQ" secondAttribute="bottom" constant="38" id="aHS-2h-a6s"/>
+                            <constraint firstItem="ih1-AT-5LQ" firstAttribute="trailing" secondItem="D9k-Ug-oPg" secondAttribute="trailing" id="gct-kp-mh9"/>
+                            <constraint firstItem="8FU-WF-wfJ" firstAttribute="leading" secondItem="tsR-hK-woN" secondAttribute="leadingMargin" constant="11" id="lwz-Bo-5nY"/>
+                            <constraint firstItem="8FU-WF-wfJ" firstAttribute="centerX" secondItem="kSr-52-Sy2" secondAttribute="centerX" id="njE-hi-oI0"/>
+                            <constraint firstItem="SNx-gJ-hz9" firstAttribute="leading" secondItem="tsR-hK-woN" secondAttribute="leading" id="orp-w0-otR"/>
+                            <constraint firstItem="HC9-4E-1qq" firstAttribute="baseline" secondItem="xbA-r0-lwQ" secondAttribute="baseline" id="wv3-3c-xkd"/>
+                            <constraint firstItem="ih1-AT-5LQ" firstAttribute="leading" secondItem="D9k-Ug-oPg" secondAttribute="leading" id="xAG-YC-TRN"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Timer" image="Timer" id="acW-dT-cKf"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                    <connections>
+                        <outlet property="breakTimeTextBox" destination="D9k-Ug-oPg" id="rjh-px-ESv"/>
+                        <outlet property="displayTimeLabel" destination="foD-MH-gSK" id="atC-02-1ef"/>
+                        <outlet property="workTimeTextBox" destination="ih1-AT-5LQ" id="izI-R5-GJP"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="W5J-7L-Pyd" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="830.5" y="-267.5"/>
+        </scene>
+        <!--About-->
+        <scene sceneID="wg7-f3-ORb">
+            <objects>
+                <viewController title="About" id="8rJ-Kc-sve" customClass="SecondViewController" customModule="Pomodoro" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="L7p-HK-0SC"/>
+                        <viewControllerLayoutGuide type="bottom" id="Djb-ko-YwX"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="QS5-Rx-YEW">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="luB-8C-bjH">
+                                <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="barTintColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <items>
+                                    <navigationItem title="About" id="EtN-Dw-geN"/>
+                                </items>
+                            </navigationBar>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="About this App &amp; Acknowledgments" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ADc-cp-c9B">
+                                <rect key="frame" x="49" y="121" width="277" height="28"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="28" id="jTk-gx-YLV"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BeX-5P-Xbz">
+                                <rect key="frame" x="36" y="319" width="303" height="328"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <accessibility key="accessibilityConfiguration">
+                                    <accessibilityTraits key="traits" none="YES" notEnabled="YES"/>
+                                </accessibility>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="328" id="DsW-FK-LCs"/>
+                                </constraints>
+                                <string key="text">Evan Dorn -- Pomodoro v 1.0. A "very" basic pomodoro app. This app simplely sets a 25:00 time for the default and a 5:00 break timer. The times can be changed using the text boxes in the UI. Start begins the countdown and stop ends it. More features / a better UI will be added in future versions. Also bug fixes. I recieved help from Joey with Auto layout and alert views.</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Image-1" translatesAutoresizingMaskIntoConstraints="NO" id="cGO-IF-QUB">
+                                <rect key="frame" x="110" y="157" width="154" height="154"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="cGO-IF-QUB" firstAttribute="centerX" secondItem="ADc-cp-c9B" secondAttribute="centerX" id="Fee-6e-uyx"/>
+                            <constraint firstItem="BeX-5P-Xbz" firstAttribute="leading" secondItem="QS5-Rx-YEW" secondAttribute="leadingMargin" constant="20" id="RdC-VR-t7X"/>
+                            <constraint firstItem="luB-8C-bjH" firstAttribute="leading" secondItem="QS5-Rx-YEW" secondAttribute="leading" id="SF7-oQ-1Ug"/>
+                            <constraint firstItem="cGO-IF-QUB" firstAttribute="leading" secondItem="QS5-Rx-YEW" secondAttribute="leadingMargin" constant="94" id="UdR-SD-uvn"/>
+                            <constraint firstItem="ADc-cp-c9B" firstAttribute="top" secondItem="luB-8C-bjH" secondAttribute="bottom" constant="57" id="XH0-ih-69F"/>
+                            <constraint firstItem="BeX-5P-Xbz" firstAttribute="centerX" secondItem="QS5-Rx-YEW" secondAttribute="centerX" id="f2I-wm-4yG"/>
+                            <constraint firstItem="Djb-ko-YwX" firstAttribute="top" secondItem="BeX-5P-Xbz" secondAttribute="bottom" constant="-29" id="mhl-Pj-DqN"/>
+                            <constraint firstItem="cGO-IF-QUB" firstAttribute="top" secondItem="ADc-cp-c9B" secondAttribute="bottom" constant="8" symbolic="YES" id="nrk-4g-CR0"/>
+                            <constraint firstItem="BeX-5P-Xbz" firstAttribute="top" secondItem="cGO-IF-QUB" secondAttribute="bottom" constant="8" symbolic="YES" id="qRp-d1-Cth"/>
+                            <constraint firstItem="BeX-5P-Xbz" firstAttribute="centerX" secondItem="luB-8C-bjH" secondAttribute="centerX" id="rTm-8x-qek"/>
+                            <constraint firstItem="BeX-5P-Xbz" firstAttribute="top" secondItem="ADc-cp-c9B" secondAttribute="bottom" constant="170" id="sEk-g0-hH8"/>
+                            <constraint firstItem="ADc-cp-c9B" firstAttribute="centerX" secondItem="luB-8C-bjH" secondAttribute="centerX" id="zGJ-Mp-MxM"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="About" image="History" id="cPa-gy-q4n"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="4Nw-L8-lE0" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="823.5" y="455.5"/>
+        </scene>
+        <!--Pomodoro-->
+        <scene sceneID="yl2-sM-qoP">
+            <objects>
+                <tabBarController title="Pomodoro" id="49e-Tb-3d3" sceneMemberID="viewController">
+                    <nil key="simulatedBottomBarMetrics"/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" id="W28-zg-YXA">
+                        <rect key="frame" x="0.0" y="975" width="768" height="49"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="9pv-A4-QxB" kind="relationship" relationship="viewControllers" id="u7Y-xg-7CH"/>
+                        <segue destination="8rJ-Kc-sve" kind="relationship" relationship="viewControllers" id="lzU-1b-eKA"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="HuB-VB-40B" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="0.0" y="0.0"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="History" width="25" height="25"/>
+        <image name="Image-1" width="1024" height="1024"/>
+        <image name="Timer" width="25" height="25"/>
+    </resources>
+</document>

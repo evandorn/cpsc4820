@@ -1,0 +1,438 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		206174B91B95EC8000BB39ED /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 206174B81B95EC8000BB39ED /* AppDelegate.swift */; };
+		206174BB1B95EC8000BB39ED /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 206174BA1B95EC8000BB39ED /* FirstViewController.swift */; };
+		206174BD1B95EC8000BB39ED /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 206174BC1B95EC8000BB39ED /* SecondViewController.swift */; };
+		206174C01B95EC8000BB39ED /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 206174BE1B95EC8000BB39ED /* Main.storyboard */; };
+		206174C21B95EC8000BB39ED /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 206174C11B95EC8000BB39ED /* Images.xcassets */; };
+		206174C51B95EC8000BB39ED /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 206174C31B95EC8000BB39ED /* LaunchScreen.xib */; };
+		206174D11B95EC8000BB39ED /* PomodoroTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 206174D01B95EC8000BB39ED /* PomodoroTests.swift */; };
+		20FA145D1B98ACE5003306AD /* 1441135588_Tomato.png in Resources */ = {isa = PBXBuildFile; fileRef = 20FA145C1B98ACE5003306AD /* 1441135588_Tomato.png */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		206174CB1B95EC8000BB39ED /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 206174AB1B95EC7F00BB39ED /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 206174B21B95EC7F00BB39ED;
+			remoteInfo = Pomodoro;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		201700891B9DD22600B07D6E /* readme.rtf */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; name = readme.rtf; path = ../../readme.rtf; sourceTree = "<group>"; };
+		206174B31B95EC8000BB39ED /* Pomodoro.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Pomodoro.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		206174B71B95EC8000BB39ED /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		206174B81B95EC8000BB39ED /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		206174BA1B95EC8000BB39ED /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
+		206174BC1B95EC8000BB39ED /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
+		206174BF1B95EC8000BB39ED /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		206174C11B95EC8000BB39ED /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		206174C41B95EC8000BB39ED /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		206174CA1B95EC8000BB39ED /* PomodoroTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PomodoroTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		206174CF1B95EC8000BB39ED /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		206174D01B95EC8000BB39ED /* PomodoroTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PomodoroTests.swift; sourceTree = "<group>"; };
+		20FA145C1B98ACE5003306AD /* 1441135588_Tomato.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 1441135588_Tomato.png; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		206174B01B95EC7F00BB39ED /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		206174C71B95EC8000BB39ED /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		206174AA1B95EC7F00BB39ED = {
+			isa = PBXGroup;
+			children = (
+				206174B51B95EC8000BB39ED /* Pomodoro */,
+				206174CD1B95EC8000BB39ED /* PomodoroTests */,
+				206174B41B95EC8000BB39ED /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		206174B41B95EC8000BB39ED /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				206174B31B95EC8000BB39ED /* Pomodoro.app */,
+				206174CA1B95EC8000BB39ED /* PomodoroTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		206174B51B95EC8000BB39ED /* Pomodoro */ = {
+			isa = PBXGroup;
+			children = (
+				20FA145C1B98ACE5003306AD /* 1441135588_Tomato.png */,
+				206174B81B95EC8000BB39ED /* AppDelegate.swift */,
+				206174BA1B95EC8000BB39ED /* FirstViewController.swift */,
+				201700891B9DD22600B07D6E /* readme.rtf */,
+				206174BC1B95EC8000BB39ED /* SecondViewController.swift */,
+				206174BE1B95EC8000BB39ED /* Main.storyboard */,
+				206174C11B95EC8000BB39ED /* Images.xcassets */,
+				206174C31B95EC8000BB39ED /* LaunchScreen.xib */,
+				206174B61B95EC8000BB39ED /* Supporting Files */,
+			);
+			path = Pomodoro;
+			sourceTree = "<group>";
+		};
+		206174B61B95EC8000BB39ED /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				206174B71B95EC8000BB39ED /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		206174CD1B95EC8000BB39ED /* PomodoroTests */ = {
+			isa = PBXGroup;
+			children = (
+				206174D01B95EC8000BB39ED /* PomodoroTests.swift */,
+				206174CE1B95EC8000BB39ED /* Supporting Files */,
+			);
+			path = PomodoroTests;
+			sourceTree = "<group>";
+		};
+		206174CE1B95EC8000BB39ED /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				206174CF1B95EC8000BB39ED /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		206174B21B95EC7F00BB39ED /* Pomodoro */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 206174D41B95EC8000BB39ED /* Build configuration list for PBXNativeTarget "Pomodoro" */;
+			buildPhases = (
+				206174AF1B95EC7F00BB39ED /* Sources */,
+				206174B01B95EC7F00BB39ED /* Frameworks */,
+				206174B11B95EC7F00BB39ED /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Pomodoro;
+			productName = Pomodoro;
+			productReference = 206174B31B95EC8000BB39ED /* Pomodoro.app */;
+			productType = "com.apple.product-type.application";
+		};
+		206174C91B95EC8000BB39ED /* PomodoroTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 206174D71B95EC8000BB39ED /* Build configuration list for PBXNativeTarget "PomodoroTests" */;
+			buildPhases = (
+				206174C61B95EC8000BB39ED /* Sources */,
+				206174C71B95EC8000BB39ED /* Frameworks */,
+				206174C81B95EC8000BB39ED /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				206174CC1B95EC8000BB39ED /* PBXTargetDependency */,
+			);
+			name = PomodoroTests;
+			productName = PomodoroTests;
+			productReference = 206174CA1B95EC8000BB39ED /* PomodoroTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		206174AB1B95EC7F00BB39ED /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0640;
+				ORGANIZATIONNAME = "Evan Dorn";
+				TargetAttributes = {
+					206174B21B95EC7F00BB39ED = {
+						CreatedOnToolsVersion = 6.4;
+					};
+					206174C91B95EC8000BB39ED = {
+						CreatedOnToolsVersion = 6.4;
+						TestTargetID = 206174B21B95EC7F00BB39ED;
+					};
+				};
+			};
+			buildConfigurationList = 206174AE1B95EC7F00BB39ED /* Build configuration list for PBXProject "Pomodoro" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 206174AA1B95EC7F00BB39ED;
+			productRefGroup = 206174B41B95EC8000BB39ED /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				206174B21B95EC7F00BB39ED /* Pomodoro */,
+				206174C91B95EC8000BB39ED /* PomodoroTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		206174B11B95EC7F00BB39ED /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				206174C01B95EC8000BB39ED /* Main.storyboard in Resources */,
+				206174C51B95EC8000BB39ED /* LaunchScreen.xib in Resources */,
+				206174C21B95EC8000BB39ED /* Images.xcassets in Resources */,
+				20FA145D1B98ACE5003306AD /* 1441135588_Tomato.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		206174C81B95EC8000BB39ED /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		206174AF1B95EC7F00BB39ED /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				206174BD1B95EC8000BB39ED /* SecondViewController.swift in Sources */,
+				206174B91B95EC8000BB39ED /* AppDelegate.swift in Sources */,
+				206174BB1B95EC8000BB39ED /* FirstViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		206174C61B95EC8000BB39ED /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				206174D11B95EC8000BB39ED /* PomodoroTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		206174CC1B95EC8000BB39ED /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 206174B21B95EC7F00BB39ED /* Pomodoro */;
+			targetProxy = 206174CB1B95EC8000BB39ED /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		206174BE1B95EC8000BB39ED /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				206174BF1B95EC8000BB39ED /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		206174C31B95EC8000BB39ED /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				206174C41B95EC8000BB39ED /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		206174D21B95EC8000BB39ED /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		206174D31B95EC8000BB39ED /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		206174D51B95EC8000BB39ED /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = Pomodoro/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		206174D61B95EC8000BB39ED /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = Pomodoro/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+		206174D81B95EC8000BB39ED /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = PomodoroTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Pomodoro.app/Pomodoro";
+			};
+			name = Debug;
+		};
+		206174D91B95EC8000BB39ED /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = PomodoroTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Pomodoro.app/Pomodoro";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		206174AE1B95EC7F00BB39ED /* Build configuration list for PBXProject "Pomodoro" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				206174D21B95EC8000BB39ED /* Debug */,
+				206174D31B95EC8000BB39ED /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		206174D41B95EC8000BB39ED /* Build configuration list for PBXNativeTarget "Pomodoro" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				206174D51B95EC8000BB39ED /* Debug */,
+				206174D61B95EC8000BB39ED /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		206174D71B95EC8000BB39ED /* Build configuration list for PBXNativeTarget "PomodoroTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				206174D81B95EC8000BB39ED /* Debug */,
+				206174D91B95EC8000BB39ED /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 206174AB1B95EC7F00BB39ED /* Project object */;
+}
