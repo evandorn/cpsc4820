@@ -12,12 +12,16 @@
 	<dict>
 		<key>708F96B75BD2FE48B5206FBDD871276CB5E6F83B</key>
 		<string>https://github.com/evandorn/cpsc4820.git</string>
+		<key>97FDCFC5D1AE30B2074EFEADA766181BD3A6400E</key>
+		<string>https://github.com/evandorn/cpsc4820.git</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
 	<string>A1/Pomodoro/Pomodoro.xcodeproj</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
 		<key>708F96B75BD2FE48B5206FBDD871276CB5E6F83B</key>
+		<string>../../../../../cpsc4820</string>
+		<key>97FDCFC5D1AE30B2074EFEADA766181BD3A6400E</key>
 		<string>../../../..</string>
 	</dict>
 	<key>IDESourceControlProjectURL</key>
@@ -25,9 +29,17 @@
 	<key>IDESourceControlProjectVersion</key>
 	<integer>111</integer>
 	<key>IDESourceControlProjectWCCIdentifier</key>
-	<string>708F96B75BD2FE48B5206FBDD871276CB5E6F83B</string>
+	<string>97FDCFC5D1AE30B2074EFEADA766181BD3A6400E</string>
 	<key>IDESourceControlProjectWCConfigurations</key>
 	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>97FDCFC5D1AE30B2074EFEADA766181BD3A6400E</string>
+			<key>IDESourceControlWCCName</key>
+			<string>cpsc_4820</string>
+		</dict>
 		<dict>
 			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
 			<string>public.vcs.git</string>

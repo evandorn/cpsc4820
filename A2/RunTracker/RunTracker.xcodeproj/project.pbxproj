@@ -10,6 +10,7 @@
 		200890BE1BB108A500D34B1A /* RunTracker.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 200890BC1BB108A500D34B1A /* RunTracker.xcdatamodeld */; };
 		2016FB681BB33B9100EF2033 /* Location.gpx in Resources */ = {isa = PBXBuildFile; fileRef = 2016FB671BB33B9100EF2033 /* Location.gpx */; };
 		20326A9C1BB47BD700B1F95F /* RunHistoryTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20326A9B1BB47BD700B1F95F /* RunHistoryTableViewController.swift */; };
+		20CEC56C1BBF08A100F87BED /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20CEC56B1BBF08A100F87BED /* User.swift */; };
 		20D983061BB32383005DB2B7 /* AboutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20D983051BB32383005DB2B7 /* AboutViewController.swift */; };
 		20D983081BB336D0005DB2B7 /* RunDataTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20D983071BB336D0005DB2B7 /* RunDataTableViewController.swift */; };
 		7892B4B31AFECC7E00195857 /* MulticolorPolylineSegment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7892B4B21AFECC7E00195857 /* MulticolorPolylineSegment.swift */; };
@@ -40,6 +41,7 @@
 		200890BD1BB108A500D34B1A /* RunTracker.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = RunTracker.xcdatamodel; sourceTree = "<group>"; };
 		2016FB671BB33B9100EF2033 /* Location.gpx */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = Location.gpx; sourceTree = "<group>"; };
 		20326A9B1BB47BD700B1F95F /* RunHistoryTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RunHistoryTableViewController.swift; sourceTree = "<group>"; };
+		20CEC56B1BBF08A100F87BED /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		20D983051BB32383005DB2B7 /* AboutViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AboutViewController.swift; sourceTree = "<group>"; };
 		20D983071BB336D0005DB2B7 /* RunDataTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RunDataTableViewController.swift; sourceTree = "<group>"; };
 		7892B4B21AFECC7E00195857 /* MulticolorPolylineSegment.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MulticolorPolylineSegment.swift; sourceTree = "<group>"; };
@@ -84,6 +86,7 @@
 			children = (
 				78CE0D661AFBEA54009BBE75 /* Run.swift */,
 				78CE0D641AFBEA53009BBE75 /* Location.swift */,
+				20CEC56B1BBF08A100F87BED /* User.swift */,
 			);
 			name = Models;
 			sourceTree = "<group>";
@@ -277,6 +280,7 @@
 				20D983081BB336D0005DB2B7 /* RunDataTableViewController.swift in Sources */,
 				7892B4B31AFECC7E00195857 /* MulticolorPolylineSegment.swift in Sources */,
 				870F826A1A24E70F00776E2F /* DetailViewController.swift in Sources */,
+				20CEC56C1BBF08A100F87BED /* User.swift in Sources */,
 				78CE0D651AFBEA53009BBE75 /* Location.swift in Sources */,
 				78CE0D671AFBEA54009BBE75 /* Run.swift in Sources */,
 				8772AB5B1A26347A00613309 /* HomeViewController.swift in Sources */,
