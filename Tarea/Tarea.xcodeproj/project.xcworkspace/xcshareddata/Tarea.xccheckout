@@ -7,14 +7,14 @@
 	<key>IDESourceControlProjectIdentifier</key>
 	<string>074B770F-57CA-465F-9F07-0C567F5566B5</string>
 	<key>IDESourceControlProjectName</key>
-	<string>Tarea</string>
+	<string>project</string>
 	<key>IDESourceControlProjectOriginsDictionary</key>
 	<dict>
 		<key>97FDCFC5D1AE30B2074EFEADA766181BD3A6400E</key>
 		<string>https://github.com/evandorn/cpsc4820.git</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
-	<string>Tarea/Tarea.xcodeproj</string>
+	<string>Tarea/Tarea.xcodeproj/project.xcworkspace</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
 		<key>97FDCFC5D1AE30B2074EFEADA766181BD3A6400E</key>

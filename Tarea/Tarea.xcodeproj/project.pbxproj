@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		201346291BD9558100BD9F0B /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 201346281BD9558100BD9F0B /* User.swift */; };
+		2013462B1BD9558800BD9F0B /* MyTask.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2013462A1BD9558800BD9F0B /* MyTask.swift */; };
+		2013462D1BD9559000BD9F0B /* History.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2013462C1BD9559000BD9F0B /* History.swift */; };
+		203E3FEE1BD954A300A6C209 /* StrikeThroughText.swift in Sources */ = {isa = PBXBuildFile; fileRef = 203E3FED1BD954A300A6C209 /* StrikeThroughText.swift */; };
 		207CFFCE1BD87C8100203982 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 207CFFCD1BD87C8100203982 /* AppDelegate.swift */; };
 		207CFFD11BD87C8100203982 /* Tarea.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 207CFFCF1BD87C8100203982 /* Tarea.xcdatamodeld */; };
 		207CFFD31BD87C8100203982 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 207CFFD21BD87C8100203982 /* ViewController.swift */; };
@@ -27,6 +31,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		201346281BD9558100BD9F0B /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		2013462A1BD9558800BD9F0B /* MyTask.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyTask.swift; sourceTree = "<group>"; };
+		2013462C1BD9559000BD9F0B /* History.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = History.swift; sourceTree = "<group>"; };
+		203E3FED1BD954A300A6C209 /* StrikeThroughText.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StrikeThroughText.swift; sourceTree = "<group>"; };
 		207CFFC81BD87C8100203982 /* Tarea.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Tarea.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		207CFFCC1BD87C8100203982 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		207CFFCD1BD87C8100203982 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -58,6 +66,16 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		203E3FEF1BD954B500A6C209 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				201346281BD9558100BD9F0B /* User.swift */,
+				2013462A1BD9558800BD9F0B /* MyTask.swift */,
+				2013462C1BD9559000BD9F0B /* History.swift */,
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
 		207CFFBF1BD87C8000203982 = {
 			isa = PBXGroup;
 			children = (
@@ -79,8 +97,10 @@
 		207CFFCA1BD87C8100203982 /* Tarea */ = {
 			isa = PBXGroup;
 			children = (
+				203E3FEF1BD954B500A6C209 /* Models */,
 				207CFFCD1BD87C8100203982 /* AppDelegate.swift */,
 				207CFFD21BD87C8100203982 /* ViewController.swift */,
+				203E3FED1BD954A300A6C209 /* StrikeThroughText.swift */,
 				207CFFD41BD87C8100203982 /* Main.storyboard */,
 				207CFFD71BD87C8100203982 /* Images.xcassets */,
 				207CFFD91BD87C8100203982 /* LaunchScreen.xib */,
@@ -215,8 +235,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2013462B1BD9558800BD9F0B /* MyTask.swift in Sources */,
 				207CFFD31BD87C8100203982 /* ViewController.swift in Sources */,
+				2013462D1BD9559000BD9F0B /* History.swift in Sources */,
 				207CFFCE1BD87C8100203982 /* AppDelegate.swift in Sources */,
+				203E3FEE1BD954A300A6C209 /* StrikeThroughText.swift in Sources */,
+				201346291BD9558100BD9F0B /* User.swift in Sources */,
 				207CFFD11BD87C8100203982 /* Tarea.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -413,6 +437,7 @@
 				207CFFEC1BD87C8100203982 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		207CFFED1BD87C8100203982 /* Build configuration list for PBXNativeTarget "TareaTests" */ = {
 			isa = XCConfigurationList;
@@ -421,6 +446,7 @@
 				207CFFEF1BD87C8100203982 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
