@@ -24,13 +24,61 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Tarea/User.swift"
-            timestampString = "467228248.84442"
+            timestampString = "467244199.83837"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "18"
-            endingLineNumber = "18"
+            startingLineNumber = "17"
+            endingLineNumber = "17"
             landmarkName = "User"
             landmarkType = "3">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Tarea/ToDoItem.swift"
+            timestampString = "467512087.620147"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "14"
+            endingLineNumber = "14"
+            landmarkName = "ToDoItem"
+            landmarkType = "3">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Tarea.ToDoItem.__deallocating_deinit"
+                  moduleName = "Tarea"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/evandorn/Code/cpsc_4820/Tarea/Tarea/ToDoItem.swift"
+                  timestampString = "467512390.536793"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "12">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Tarea.ToDoItem.init (Tarea.ToDoItem.Type)() -&gt; Tarea.ToDoItem"
+                  moduleName = "Tarea"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/evandorn/Code/cpsc_4820/Tarea/Tarea/ToDoItem.swift"
+                  timestampString = "467512390.537118"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "14"
+                  endingLineNumber = "14"
+                  offsetFromSymbolStart = "12">
+               </Location>
+            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>
