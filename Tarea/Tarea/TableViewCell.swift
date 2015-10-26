@@ -13,9 +13,13 @@ import QuartzCore
 protocol TableViewCellDelegate {
     // indicates that the given item has been deleted
     func toDoItemDeleted(todoItem: ToDoItem)
+    // Indicates that the edit process has begun for the given cell
+    func cellDidBeginEditing(editingCell: TableViewCell)
+    // Indicates that the edit process has committed for the given cell
+    func cellDidEndEditing(editingCell: TableViewCell)
 }
 
-class TableViewCell: UITableViewCell {
+class TableViewCell: UITableViewCell, UITextFieldDelegate {
     
     let gradientLayer = CAGradientLayer()
     var originalCenter = CGPoint()
@@ -38,58 +42,62 @@ class TableViewCell: UITableViewCell {
         fatalError("NSCoding not supported")
     }
     
-    override init(style: UITableViewCellStyle, reuseIdentifier: String?) {
-        // create a label that renders the to-do item text
-        label = StrikeThroughText(frame: CGRect.nullRect)
-        label.textColor = UIColor.whiteColor()
-        label.font = UIFont.boldSystemFontOfSize(16)
-        label.backgroundColor = UIColor.clearColor()
-        
-        // utility method for creating the contextual cues
-        func createCueLabel() -> UILabel {
-            let label = UILabel(frame: CGRect.nullRect)
+    override init(style: UITableViewCellStyle,
+        reuseIdentifier: String?) {
+            // create a label that renders the to-do item text
+            label = StrikeThroughText(frame: CGRect.nullRect)
             label.textColor = UIColor.whiteColor()
-            label.font = UIFont.boldSystemFontOfSize(32.0)
+            label.font = UIFont.boldSystemFontOfSize(16)
             label.backgroundColor = UIColor.clearColor()
-            return label
-        }
-        
-        // tick and cross labels for context cues
-        tickLabel = createCueLabel()
-        tickLabel.text = "\u{2713}"
-        tickLabel.textAlignment = .Right
-        crossLabel = createCueLabel()
-        crossLabel.text = "\u{2717}"
-        crossLabel.textAlignment = .Left
-        
-        super.init(style: style, reuseIdentifier: reuseIdentifier)
-        
-        addSubview(label)
-        addSubview(tickLabel)
-        addSubview(crossLabel)
-        // remove the default blue highlight for selected cells
-        selectionStyle = .None
-        
-        // gradient layer for cell
-        gradientLayer.frame = bounds
-        let color1 = UIColor(white: 1.0, alpha: 0.2).CGColor as CGColorRef
-        let color2 = UIColor(white: 1.0, alpha: 0.1).CGColor as CGColorRef
-        let color3 = UIColor.clearColor().CGColor as CGColorRef
-        let color4 = UIColor(white: 0.0, alpha: 0.1).CGColor as CGColorRef
-        gradientLayer.colors = [color1, color2, color3, color4]
-        gradientLayer.locations = [0.0, 0.01, 0.95, 1.0]
-        layer.insertSublayer(gradientLayer, atIndex: 0)
-        
-        // add a layer that renders a green background when an item is complete
-        itemCompleteLayer = CALayer(layer: layer)
-        itemCompleteLayer.backgroundColor = UIColor(red: 0.0, green: 0.6, blue: 0.0, alpha: 1.0).CGColor
-        itemCompleteLayer.hidden = true
-        layer.insertSublayer(itemCompleteLayer, atIndex: 0)
-        
-        // add a pan recognizer
-        var recognizer = UIPanGestureRecognizer(target: self, action: "handlePan:")
-        recognizer.delegate = self
-        addGestureRecognizer(recognizer)
+            
+            // utility method for creating the contextual cues
+            func createCueLabel() -> UILabel {
+                let label = UILabel(frame: CGRect.nullRect)
+                label.textColor = UIColor.whiteColor()
+                label.font = UIFont.boldSystemFontOfSize(32.0)
+                label.backgroundColor = UIColor.clearColor()
+                return label
+            }
+            
+            // tick and cross labels for context cues
+            tickLabel = createCueLabel()
+            tickLabel.text = "\u{2713}"
+            tickLabel.textAlignment = .Right
+            crossLabel = createCueLabel()
+            crossLabel.text = "\u{2717}"
+            crossLabel.textAlignment = .Left
+            
+            super.init(style: style, reuseIdentifier: reuseIdentifier)
+            
+            label.delegate = self
+            label.contentVerticalAlignment = .Center
+            
+            addSubview(label)
+            addSubview(tickLabel)
+            addSubview(crossLabel)
+            // remove the default blue highlight for selected cells
+            selectionStyle = .None
+            
+            // gradient layer for cell
+            gradientLayer.frame = bounds
+            let color1 = UIColor(white: 1.0, alpha: 0.2).CGColor as CGColorRef
+            let color2 = UIColor(white: 1.0, alpha: 0.1).CGColor as CGColorRef
+            let color3 = UIColor.clearColor().CGColor as CGColorRef
+            let color4 = UIColor(white: 0.0, alpha: 0.1).CGColor as CGColorRef
+            gradientLayer.colors = [color1, color2, color3, color4]
+            gradientLayer.locations = [0.0, 0.01, 0.95, 1.0]
+            layer.insertSublayer(gradientLayer, atIndex: 0)
+            
+            // add a layer that renders a green background when an item is complete
+            itemCompleteLayer = CALayer(layer: layer)
+            itemCompleteLayer.backgroundColor = UIColor(red: 0.0, green: 0.6, blue: 0.0, alpha: 1.0).CGColor
+            itemCompleteLayer.hidden = true
+            layer.insertSublayer(itemCompleteLayer, atIndex: 0)
+            
+            // add a pan recognizer
+            var recognizer = UIPanGestureRecognizer(target: self, action: "handlePan:")
+            recognizer.delegate = self
+            addGestureRecognizer(recognizer)
     }
     
     let kLabelLeftMargin: CGFloat = 15.0
@@ -160,5 +168,36 @@ class TableViewCell: UITableViewCell {
             return false
         }
         return false
+    }
+    
+    // MARK: - UITextFieldDelegate methods
+    
+    func textFieldShouldReturn(textField: UITextField) -> Bool {
+        // close the keyboard on Enter
+        textField.resignFirstResponder()
+        return false
+    }
+    
+    func textFieldShouldBeginEditing(textField: UITextField) -> Bool {
+        // disable editing of completed to-do items
+        if toDoItem != nil {
+            return !toDoItem!.completed
+        }
+        return false
+    }
+    
+    func textFieldDidEndEditing(textField: UITextField) {
+        if toDoItem != nil {
+            toDoItem!.text = textField.text
+        }
+        if delegate != nil {
+            delegate!.cellDidEndEditing(self)
+        }
+    }
+    
+    func textFieldDidBeginEditing(textField: UITextField) {
+        if delegate != nil {
+            delegate!.cellDidBeginEditing(self)
+        }
     }
 }
