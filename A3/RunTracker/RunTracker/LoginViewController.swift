@@ -13,7 +13,7 @@ import CoreData
 
 class LoginViewController: UIViewController, UITextFieldDelegate {
     
-    
+    /*
     var name: UITextField?
     
     let button   = UIButton.buttonWithType(UIButtonType.System) as! UIButton
@@ -39,7 +39,7 @@ class LoginViewController: UIViewController, UITextFieldDelegate {
     }
     
     // Vova helped with linking the 2K button to the next view
-    func buttonAction (sender: UIButton) {
+    func buttonAction(sender: UIButton) {
         
         println("Go pressed")
         
@@ -51,13 +51,11 @@ class LoginViewController: UIViewController, UITextFieldDelegate {
         
         //Instance of custom class, reference to entity
         var newUser = User(entity: ent!, insertIntoManagedObjectContext: context)
-    
         newUser.username = self.name!.text
-        
         context.save(nil)
         println(newUser)
-        
         performSegueWithIdentifier("tab_segue", sender: nil)
         
     }
+*/ 
 }

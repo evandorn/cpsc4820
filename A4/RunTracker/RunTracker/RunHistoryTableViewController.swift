@@ -60,11 +60,10 @@ class RunHistoryTableViewController: UITableViewController, UITableViewDelegate,
         println("After results View")
         // Get contents and put into cell
         println("Label printing")
-
         cell.durationLabel?.text = "Duration: \((results2[indexPath.row] as! Run).duration)"
         cell.distanceLabel?.text = "Distance: \((results2[indexPath.row] as! Run).distance)"
-        //cell.timestampLabel?.text = "Time Stamp: \((results[indexPath.row] as! Run).timestamp)"
-        cell.timestampLabel?.text = "Time Stamp: "
+        // cell.timestampLabel?.text = "Time Stamp: \((results2[indexPath.row] as! Run).timestamp)"
+        // cell.timestampLabel?.text = "Time Stamp: "
 
         
         /*

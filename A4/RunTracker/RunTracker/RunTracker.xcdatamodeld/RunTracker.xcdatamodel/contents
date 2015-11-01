@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<model userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="7701" systemVersion="15B38b" minimumToolsVersion="Automatic" macOSVersion="Automatic" iOSVersion="Automatic">
+<model userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="7701" systemVersion="15C27e" minimumToolsVersion="Automatic" macOSVersion="Automatic" iOSVersion="Automatic">
     <entity name="Location" representedClassName="RunTracker.Location" syncable="YES">
         <attribute name="id" optional="YES" attributeType="Integer 64" defaultValueString="0" syncable="YES"/>
         <attribute name="latitude" optional="YES" attributeType="Double" defaultValueString="0.0" syncable="YES"/>
@@ -10,7 +10,7 @@
         <attribute name="distance" optional="YES" attributeType="Float" defaultValueString="0.0" syncable="YES"/>
         <attribute name="duration" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
         <attribute name="id" optional="YES" attributeType="Integer 64" defaultValueString="0" syncable="YES"/>
-        <attribute name="locations" optional="YES" attributeType="Binary" syncable="YES"/>
+        <attribute name="locations" optional="YES" attributeType="Transformable" syncable="YES"/>
         <attribute name="timestamp" optional="YES" attributeType="Date" syncable="YES"/>
     </entity>
     <entity name="User" syncable="YES">
@@ -19,7 +19,7 @@
     </entity>
     <elements>
         <element name="Location" positionX="-54" positionY="-9" width="128" height="103"/>
-        <element name="Run" positionX="106" positionY="149" width="128" height="120"/>
+        <element name="Run" positionX="106" positionY="149" width="128" height="118"/>
         <element name="User" positionX="-171" positionY="189" width="128" height="73"/>
     </elements>
 </model>
