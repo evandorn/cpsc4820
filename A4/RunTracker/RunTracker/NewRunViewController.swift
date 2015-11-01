@@ -111,10 +111,20 @@ class NewRunViewController: UIViewController {
       savedLocations.append(savedLocation)
     }
     
-    // theRun.locations = NSOrderedSet(array: savedLocations)
+    theRun.locations = NSOrderedSet(array: savedLocations)
 
     run = theRun
     println("Save location")
+
+    let ent = NSEntityDescription.entityForName("User", inManagedObjectContext: managedObjectContext!)
+    
+    // Instance of custom class, reference to entity
+    var newUser = User(entity: ent!, insertIntoManagedObjectContext: managedObjectContext!)
+    newUser.username = "Evan Dorn"
+    println(newUser)
+    
+    println("Save User")
+
     
     // 3
     var error: NSError?

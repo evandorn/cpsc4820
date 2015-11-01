@@ -112,7 +112,6 @@ class DetailViewController: UIViewController {
                 cancelButtonTitle: "OK").show()
         }
     }
-    
 }
 
 // MARK: - MKMapViewDelegate
